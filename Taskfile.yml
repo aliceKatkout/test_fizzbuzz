@@ -1,0 +1,33 @@
+version: '3'
+
+tasks:
+  run:
+    desc: Run the API server locally
+    cmds:
+      - go run ./cmd/server
+
+  build:
+    desc: Build the server binary into bin/server
+    cmds:
+      - CGO_ENABLED=0 go build -o bin/server ./cmd/server
+
+  test:
+    desc: Run the full test suite with the race detector and coverage
+    cmds:
+      - go test ./... -race -cover
+
+  lint:
+    desc: Vet the code and check formatting
+    cmds:
+      - go vet ./...
+      - gofmt -l .
+
+  docker-build:
+    desc: Build the Docker image
+    cmds:
+      - docker build -t fizzbuzz-api .
+
+  docker-run:
+    desc: Run the Docker image, exposing port 8080
+    cmds:
+      - docker run --rm --name fizzbuzz-api -p 8080:8080 fizzbuzz-api
