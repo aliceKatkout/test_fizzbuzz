@@ -1,5 +1,7 @@
 # FizzBuzz API
 
+[![CI](https://github.com/aliceKatkout/test_fizzbuzz/actions/workflows/ci.yml/badge.svg)](https://github.com/aliceKatkout/test_fizzbuzz/actions/workflows/ci.yml)
+
 A REST API implementing a generalized version of FizzBuzz, plus a statistics
 endpoint reporting the most frequently requested parameters.
 

@@ -6,8 +6,8 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/alicekatkout/fizzbuzz-api/internal/fizzbuzz"
-	"github.com/alicekatkout/fizzbuzz-api/internal/stats"
+	"github.com/aliceKatkout/test_fizzbuzz/internal/fizzbuzz"
+	"github.com/aliceKatkout/test_fizzbuzz/internal/stats"
 )
 
 func parseFizzBuzzRequest(q url.Values) (fizzbuzz.Request, error) {

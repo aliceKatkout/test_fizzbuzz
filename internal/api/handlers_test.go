@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/alicekatkout/fizzbuzz-api/internal/stats"
+	"github.com/aliceKatkout/test_fizzbuzz/internal/stats"
 )
 
 func TestFizzBuzzHandler_Success(t *testing.T) {

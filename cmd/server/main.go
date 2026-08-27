@@ -10,8 +10,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/alicekatkout/fizzbuzz-api/internal/api"
-	"github.com/alicekatkout/fizzbuzz-api/internal/stats"
+	"github.com/aliceKatkout/test_fizzbuzz/internal/api"
+	"github.com/aliceKatkout/test_fizzbuzz/internal/stats"
 )
 
 func main() {

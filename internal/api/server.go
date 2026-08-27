@@ -3,7 +3,7 @@ package api
 import (
 	"net/http"
 
-	"github.com/alicekatkout/fizzbuzz-api/internal/stats"
+	"github.com/aliceKatkout/test_fizzbuzz/internal/stats"
 )
 
 // NewRouter builds the complete HTTP handler for the API, including
